@@ -1,0 +1,28 @@
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Members</a></li>
+            </ul>
+        </nav>
+
+        <div class="columns">
+            {{#each members}}
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title"> {{ this.name }} </p>
+                        <p class="subtitle">{{ this.gender }}</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span> Follow </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

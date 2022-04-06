@@ -1,0 +1,31 @@
+express
+---------------------------------------------------------------
+1. express adalah framework nodejs sederhana, bebas, dan full 
+   control yang tujuannya untuk mempermudah penulisan code js 
+   pada nodejs. bisa diinstall melalui npm.
+
+2. express adalah fullstack framework, bisa untuk rest api, atau
+   render html dengan menggunakan template engine cth: handlebar
+   (express-handlebar), pug, exjs.
+
+3. referensi framework lain: koa, happy, adonis.
+
+4. fitur yang dimiliki express: middleware, route, body parser,
+   static folder
+
+5. middleware merupakan function digunakan dengan perintah 
+   app.use(), dijalankan sebelum route. midleware memiliki 
+   akses ke request, dan response yang terjadi pada server.
+
+6. static folder, jika website kita tidak membutuhkan mengola 
+   data secara dinamis, static file dapat di buat dengan perintah
+   middleware: app.use() -> dan di dalam middleware set folder
+   mana yang akan dibuat static: express.static(). perintah full:
+   app.use(express.static(path))
+
+7. dengan menambahkan ":" sebelum kata di url kita, maka kata ter
+   but akan dianggap sebagai parameter yang dikirim oleh client
+   cth: api/users/:id -> api/users/1 -> params id = 1
+
+
+
